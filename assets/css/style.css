@@ -1,11 +1,38 @@
-body {
+body, html {
     background: url(../images/pexels-photo-990826.jpeg);
     background-attachment: fixed;
+    height: 100%;
     font-size: 18px;
     line-height: 36px;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     color: rgb(238, 230, 230);
 }
+
+#hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-photo-990826.jpeg); */
+  background: transparent;
+    /* Set a specific height */
+    height: 95%;
+    border: 5px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    font-size: 50px;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
 .container {
     width: 100%;
@@ -16,7 +43,7 @@ body {
 
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
+    color: whitesmoke;
 }
 
 h1 {
@@ -64,7 +91,9 @@ nav {
 }
 
 #main-container {
-    background-color: transparent;
+    /* background-color: white; */
+    background-image: radial-gradient(rgb(119, 135, 180), #04bbb2b4);
+    opacity: .9;
     border: 1px solid;
     border-color: #dddddd;
     width: 50%;
@@ -144,7 +173,7 @@ footer {
 .work img {
     width: 100%;
     border: none;
-    opacity: .8;
+    opacity: .7;
 }
 
 .work img:hover{
